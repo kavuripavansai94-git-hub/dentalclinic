@@ -41,7 +41,7 @@ ham.addEventListener('click', () => toggleMenu());
 menuOverlay.addEventListener('click', () => toggleMenu(true));
 
 // close on link click
-navLinks.querySelectorAll('.nav-link, .nav-book, .btn').forEach(l => {
+navLinks.querySelectorAll('a').forEach(l => {
   l.addEventListener('click', () => {
     if (navLinks.classList.contains('open')) toggleMenu(true);
   });
