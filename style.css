@@ -2284,7 +2284,12 @@ a.bci:hover {
 
   /* HERO SECTION TWEAKS */
   .hero-inner {
-    padding: 40px 20px 60px;
+    padding: 60px 20px 100px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-h) + 20px);
   }
 
   .hero-title {
