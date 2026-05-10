@@ -2282,9 +2282,15 @@ a.bci:hover {
     text-align: center;
   }
 
+  .hero {
+    display: block;
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
   /* HERO SECTION TWEAKS */
   .hero-inner {
-    padding: 40px 20px 100px;
+    padding: 60px 20px 120px;
   }
 
   .hero-title {
@@ -2636,8 +2642,15 @@ a.bci:hover {
     width: 40px !important;
     height: 40px !important;
   }
-}
 
+  .strip {
+    margin-top: 40px;
+    padding: 20px 0;
+    border: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    box-shadow: var(--shadow-sm);
+  }
+}
 @media (max-width: 480px) {
   .container {
     padding: 0 14px;
