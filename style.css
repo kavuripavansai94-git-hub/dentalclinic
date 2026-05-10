@@ -2352,6 +2352,12 @@ a.bci:hover {
     width: 100%;
     gap: 14px;
     margin-top: 0;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero-scroll {
+    display: none;
   }
 
   .hero-actions .btn-primary,
