@@ -2138,7 +2138,7 @@ a.bci:hover {
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 48px;
-    padding: 60px 24px 80px;
+    padding: 60px 24px 20px;
   }
 
   .hero-visual {
@@ -2284,7 +2284,7 @@ a.bci:hover {
 
   /* HERO SECTION TWEAKS */
   .hero-inner {
-    padding: 40px 20px 78px;
+    padding: 40px 20px 20px;
   }
 
   .hero-title {
@@ -2352,6 +2352,7 @@ a.bci:hover {
     width: 100%;
     gap: 14px;
     margin-top: 0;
+    margin-bottom: 18px;
     position: relative;
     z-index: 5;
   }
