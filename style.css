@@ -1894,7 +1894,6 @@ a.bci:hover {
   padding: 64px 0 0;
 }
 
-.footer-inner {}
 
 .footer-grid {
   display: grid;
@@ -2140,6 +2139,32 @@ a.bci:hover {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .nav-inner {
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+    gap: 8px;
+  }
+
+  .brand-icon {
+    font-size: 1.4rem;
+  }
+
+  .nav-cta-group {
+    gap: 10px;
+  }
+
+  .nav-book {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+
   .section {
     padding: 64px 0;
   }
@@ -2479,6 +2504,7 @@ a.bci:hover {
     color: #374151;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -2555,6 +2581,40 @@ a.bci:hover {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+    gap: 6px;
+  }
+
+  .brand-icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-inner {
+    gap: 8px;
+  }
+
+  .nav-cta-group {
+    gap: 8px;
+  }
+
+  .nav-book {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+
+  .hamburger {
+    padding: 4px;
+  }
+
+  .hamburger span {
+    width: 20px;
+  }
+
   .hero-title {
     font-size: 1.8rem;
   }
