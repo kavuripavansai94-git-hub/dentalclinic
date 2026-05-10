@@ -813,7 +813,7 @@ button {
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.8rem;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 14px 0;
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -2138,7 +2138,7 @@ a.bci:hover {
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 48px;
-    padding: 60px 24px 100px;
+    padding: 60px 24px 80px;
   }
 
   .hero-visual {
@@ -2282,18 +2282,9 @@ a.bci:hover {
     text-align: center;
   }
 
-  .hero {
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    padding-bottom: 0;
-  }
-
   /* HERO SECTION TWEAKS */
   .hero-inner {
-    padding: 40px 20px 80px;
+    padding: 40px 20px 60px;
   }
 
   .hero-title {
@@ -2645,16 +2636,8 @@ a.bci:hover {
     width: 40px !important;
     height: 40px !important;
   }
-
-  .strip {
-    margin-top: 0;
-    padding: 24px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    background: linear-gradient(90deg, var(--primary-dark), var(--primary));
-    position: relative;
-    z-index: 2;
-  }
 }
+
 @media (max-width: 480px) {
   .container {
     padding: 0 14px;
