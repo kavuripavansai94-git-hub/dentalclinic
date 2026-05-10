@@ -2360,6 +2360,10 @@ a.bci:hover {
     display: none;
   }
 
+  .strip {
+    padding-top: 24px;
+  }
+
   .hero-actions .btn-primary,
   .hero-actions .btn-ghost {
     width: 100%;
