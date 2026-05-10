@@ -45,6 +45,11 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -2173,7 +2178,7 @@ a.bci:hover {
     position: fixed;
     top: var(--nav-h);
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - var(--nav-h));
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
