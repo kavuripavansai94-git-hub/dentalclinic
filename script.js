@@ -303,6 +303,33 @@ form?.addEventListener('submit', (e) => {
     message: formData.get('message')
   };
 
+  const payload = {
+    name: data.name,
+    phone: data.phone,
+    service: data.service,
+    date: data.date,
+    time: data.time,
+    source: 'SmileCare Website',
+    timestamp: new Date().toISOString()
+  };
+
+  fetch('https://n8n-production-796ee.up.railway.app/webhook/c99227d4-32ed-4741-a973-a2845bc1b5f2', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`n8n webhook POST failed with status ${response.status}`);
+      }
+      console.log('Lead submitted to n8n webhook successfully.');
+    })
+    .catch((error) => {
+      console.error('Error sending lead to n8n webhook:', error);
+    });
+
   const btn = document.getElementById('form-submit');
   const originalText = btn.innerHTML;
   btn.innerHTML = 'Redirecting to WhatsApp... ⏳';
