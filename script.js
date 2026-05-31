@@ -292,15 +292,14 @@ if (dateInput) {
 form?.addEventListener('submit', (e) => {
   e.preventDefault();
   
-  // Extract data
-  const formData = new FormData(form);
+  // Extract data from the form fields using exact IDs
   const data = {
-    name: formData.get('name'),
-    phone: formData.get('phone'),
-    service: formData.get('service'),
-    date: formData.get('date'),
-    time: formData.get('time'),
-    message: formData.get('message')
+    name: document.getElementById('f-name')?.value || '',
+    phone: document.getElementById('f-phone')?.value || '',
+    service: document.getElementById('f-service')?.value || '',
+    date: document.getElementById('f-date')?.value || '',
+    time: document.getElementById('f-time')?.value || '',
+    message: document.getElementById('f-msg')?.value || ''
   };
 
   const payload = {
@@ -309,6 +308,7 @@ form?.addEventListener('submit', (e) => {
     service: data.service,
     date: data.date,
     time: data.time,
+    message: data.message,
     source: 'SmileCare Website',
     timestamp: new Date().toISOString()
   };
